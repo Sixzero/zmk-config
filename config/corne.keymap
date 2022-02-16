@@ -22,8 +22,8 @@
 //                    | GUI | LWR | SPC |   | ENT | BKSP  | ALT |
                         bindings = <
    &mo 1     &kp Q      &kp W   &kp F   &kp P      &kp B           &kp J   &kp L   &kp U     &kp Z   &kp SEMI &mo 2
-   &kp LCTRL &kp A      &kp R   &kp S   &kp T      &kp G           &kp M   &kp N   &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHFT &kp X      &kp C   &kp D   &kp V      &kp Y           &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &kp LGUI 
+   &kp LCTRL &kp A      &kp R   &kp S   &kp T      &kp G           &kp M   &kp N   &kp E     &kp I   &kp O    &bl BL_SET 50
+   &bl BL_TOG  &kp X      &kp C   &kp D   &kp V      &kp Y           &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &bl BL_INC  
                                 &kp ESC &kp SPACE  &kp TAB         &kp RET &kp BSPC &kp RALT
                         >;
                 };
