@@ -79,6 +79,8 @@
         };
 };
 
+#define U_TAPPING_TERM 200
+
 / {
   behaviors {
     hm: homerow_mods {
