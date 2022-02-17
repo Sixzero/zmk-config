@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define BASE   0
+#define BUTTON 1
+#define NAV    2
+#define FUN    3
+#define MEDIA  4
+#define NUM    5
+#define SYM    6
+#define MOUSE  7
+
 
 / {
         keymap {
@@ -21,13 +30,13 @@
 // | SHFT |  X  |  C  |  D  |  V  |  Z  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | BKSP  | ALT |
                         bindings = <
-   &mo 1     &kp Q      &kp W   &kp F   &kp P      &kp B           &kp J   &kp L   &kp U     &kp Z   &kp SEMI &mo 2
-   &kp LCTRL &kp A      &kp R   &kp S   &kp T      &kp G           &kp M   &kp N   &kp E     &kp I   &kp O    &bl BL_SET 50
-   &bl BL_TOG  &kp X      &kp C   &kp D   &kp V      &kp Y           &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &bl BL_INC  
-                                &kp ESC &kp SPACE  &kp TAB         &kp RET &kp BSPC &kp RALT
+   &mo 1       &kp Q      &kp W       &kp E          &kp R        &kp T           &kp Y   &kp U   &kp I     &kp O   &kp P       &mo 2
+   &kp LPAR   &hm LGUI A  &hm LALT S  &hm LCTRL D    &hm LSHFT F  &kp G           &kp H   &kp J   &kp K     &kp L   &kp SEMI    &bl BL_SET 50
+   &kp RALT(I)  &kp Z     &kp X       &kp C          &kp V        &kp B           &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH    &bl BL_INC  
+                                      &lt BUTTON ESC &lt NAV SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
                 };
-                lower_layer {
+                button_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -41,7 +50,7 @@
                         >;
                 };
 
-                raise_layer {
+                nav_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -52,6 +61,24 @@
    &kp LCTRL &bl BL_CYCLE   &trans      &trans           &trans   &bl BL_DEC      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &bl BL_TOG   &bl BL_SET 10 &bl BL_SET 50   &bl BL_SET 100   &bl BL_INC      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
+
+                fun_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &bl BL_CYCLE   &trans      &trans           &trans   &bl BL_DEC      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &bl BL_TOG   &bl BL_SET 10 &bl BL_SET 50   &bl BL_SET 100   &bl BL_INC      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+&trans &kp LSHFT  &kp F12    &kp F7     &kp F8   &kp F9            &trans  &trans      &trans     &trans            &bootloader  &trans  
+&trans &kp LCTRL  &kp F11    &kp F4     &kp F5   &kp F6            &trans  &kp PSCRN   &kp SLCK   &kp PAUSE_BREAK   &kp LGUI     &trans
+&trans &kp LALT   &kp F10    &kp F1     &kp F2   &kp F3            &trans  &trans      &trans     &kp RALT          &trans       &trans
+                             &kp K_APP  &kp SPC  &kp TAB         &trans  &trans      &trans
                         >;
                 };
         };
