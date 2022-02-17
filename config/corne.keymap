@@ -55,8 +55,8 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-   // &kp LCTRL &bl BL_CYCLE   &trans      &trans           &trans   &bl BL_DEC      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   // &kp LSHFT &bl BL_TOG   &bl BL_SET 10 &bl BL_SET 50   &bl BL_SET 100   &bl BL_INC      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+// &kp LCTRL &bl BL_CYCLE   &trans      &trans           &trans   &bl BL_DEC      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+// &kp LSHFT &bl BL_TOG   &bl BL_SET 10 &bl BL_SET 50   &bl BL_SET 100   &bl BL_INC      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
@@ -68,15 +68,15 @@
 
                 fun_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  LSHIFT  |  F9  |  F6   |  F3  |  F12  |   |  ^  |             |  *  |  (  |  )  | BKSP |
-// | CTRL |  LCTRL   |  F8  |  F5   |  F2  |  F11  |   |  -  |  PRINTSCRN  |  [  |  ]  |  \  |  `   |
-// | SHFT |  LALT    |  F7  |  F4   |  F1  |  F10  |   |  _  |             |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB |  LSHIFT  |  F9  |  F6   |  F3  |  F12  |   |    |          |        |         |  Bootloader  |   |
+// | CTRL |  LCTRL   |  F8  |  F5   |  F2  |  F11  |   |    |  PRTSCN  |  SLCK  |  PAUSE  |              |   |
+// | SHFT |  LALT    |  F7  |  F4   |  F1  |  F10  |   |    |          |        |         |              |   |
+//                   |      |       |      |       |   |    |          |
                         bindings = <
-&trans &kp LSHFT    &kp F9   &kp F6     &kp F3   &kp F12            &trans  &trans      &trans     &trans            &bootloader  &trans  
-&trans &kp LCTRL    &kp F8   &kp F5     &kp F2   &kp F11            &trans  &kp PSCRN   &kp SLCK   &kp PAUSE_BREAK   &kp LGUI     &trans
-&trans &kp LALT     &kp F7   &kp F4     &kp F1   &kp F10            &trans  &trans      &trans     &kp RALT          &trans       &trans
-                             &kp K_APP  &kp SPC  &kp TAB         &trans  &trans      &trans
+&trans &kp LSHFT    &kp F9   &kp F6     &kp F3   &kp F12            &trans     &trans      &trans     &trans            &bootloader  &trans  
+&trans &kp LCTRL    &kp F8   &kp F5     &kp F2   &kp F11            &kp K_APP  &kp PSCRN   &kp SLCK   &kp PAUSE_BREAK   &kp LGUI     &trans
+&trans &kp LALT     &kp F7   &kp F4     &kp F1   &kp F10            &trans     &trans      &trans     &kp RALT          &trans       &trans
+                             &trans     &trans   &trans             &trans     &trans      &trans
                         >;
                 };
         };
