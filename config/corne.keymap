@@ -12,13 +12,14 @@
 // #include <dt-bindings/zmk/backlight.h>
 
 #define BASE   0
-#define BUTTON 1
-#define NUM    2
-#define FUN    3
-#define NAV    4
-#define MEDIA  5
-#define SYM    6
-#define MOUSE  7
+#define EXTRA  1
+#define BUTTON 2
+#define NUM    3
+#define FUN    4
+#define NAV    5
+#define MEDIA  6
+#define SYM    7
+#define MOUSE  8
 
 
 / {
@@ -34,7 +35,21 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &ltg APOS EXTRA  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp NON_US_BSLH &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
+                        >;
+                };
+                extra_layer {
+                        label = "Extra";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &ltg APOS BASE  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NON_US_BSLH &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                 &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
@@ -104,7 +119,7 @@
       #binding-cells = <2>;
       tapping_term_ms = <2000>;
       flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
+      bindings = <&kp>, <&to>;
     };
   };
 };
