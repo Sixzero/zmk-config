@@ -7,15 +7,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 // #include <dt-bindings/zmk/backlight.h>
 
 #define BASE   0
 #define BUTTON 1
-#define NAV    2
+#define NUM    2
 #define FUN    3
-#define MEDIA  4
-#define NUM    5
+#define NAV    4
+#define MEDIA  5
 #define SYM    6
 #define MOUSE  7
 
@@ -35,35 +36,35 @@
    &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NON_US_BSLH &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                &lt BUTTON ESC &lt NAV SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
+                &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
                 };
                 button_layer {
                         label = "Button";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  TAB |     |     |     |     |     |   |     |     |     |     |     | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// | SHFT | USB | BLE | UBT |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp  TAB &kp BSLH &kp FSLH  &kp NON_US_BSLH   &trans   &trans    &kp FSLH &kp GRAVE &kp TILDE &trans  &trans &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &out OUT_USB &out OUT_BLE &out OUT_TOG       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
-                nav_layer {
-                        label = "Nav";
+                num_layer {
+                        label = "Num";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp FSLH &kp GRAVE &kp TILDE &trans  &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &kp BSLH &kp FSLH  &kp NON_US_BSLH   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
