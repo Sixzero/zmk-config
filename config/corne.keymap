@@ -129,7 +129,7 @@
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
-      tapping_term_ms = <100>;
+      tapping_term_ms = <60>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
