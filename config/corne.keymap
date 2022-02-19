@@ -22,7 +22,7 @@
 #define SYM    8
 #define MOUSE  9
 
-adfffdcfffffffffffhgjhhhjhhhjhhhjhhhjhhh
+
 / {
         keymap {
                 compatible = "zmk,keymap";
