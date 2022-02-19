@@ -76,7 +76,7 @@
                         bindings = <
    &kp  TAB &kp BSLH &kp FSLH  &kp NON_US_BSLH   &trans   &trans    &kp FSLH &kp GRAVE &kp TILDE &trans  &trans &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &out OUT_USB &out OUT_BLE &out OUT_TOG       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHIFT   &trans         &out OUT_USB &out OUT_BLE &out OUT_TOG  &trans  &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -113,7 +113,7 @@
         };
 };
 
-#define U_TAPPING_TERM 150
+#define U_TAPPING_TERM 200
 
 / {
   behaviors {
