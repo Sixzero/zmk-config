@@ -105,9 +105,9 @@
 // |   |  ALT   |  F7  |  F4   |  F1  |  F10  |   |    |          |        |         |              |   |
 //                   |      |       |      |       |   |    |          |
                         bindings = <
-&trans &kp LSHFT    &kp F9   &kp F6   &kp F3   &kp F12     &trans  &trans  &trans  &trans  &trans  &trans  
-&trans &kp LCTRL    &kp F8   &kp F5   &kp F2   &kp F11     &trans  &trans  &trans  &trans  &trans  &trans
-&trans &kp LALT     &kp F7   &kp F4   &kp F1   &kp F10     &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_USB &kp LSHFT    &kp F9   &kp F6   &kp F3   &kp F12     &trans  &trans  &trans  &trans  &trans  &trans  
+&out OUT_BLE &kp LCTRL    &kp F8   &kp F5   &kp F2   &kp F11     &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG &kp LALT     &kp F7   &kp F4   &kp F1   &kp F10     &trans  &trans  &trans  &trans  &trans  &trans
                              &trans   &trans   &trans      &trans  &trans  &trans
                         >;
                 };
