@@ -38,7 +38,7 @@
    &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &ltg EXTRA APOS &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NON_US_BSLH &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
+                &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
                 };
                 extra_layer {
@@ -52,7 +52,7 @@
    &ltg CRAZY BSPC &kp Q       &kp W       &kp E         &kp R         &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &ltg BASE APOS  &hsp LGUI A &hsp LALT S &hsp LCTRL D  &hsp LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NON_US_BSLH &kp Z       &kp X       &kp C         &kp V         &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
+                &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
                 };
                 crazy_layer {
@@ -64,7 +64,7 @@
    &ltg EXTRA  APOS &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
 //   &ltg EXTRA APOS &crz LGUI A &crz LALT S  &crz LCTRL D &crz LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NON_US_BSLH &kp Z &kp X &kp C &kp V  &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                &lt BUTTON ESC &lt NUM SPC  &lt FUN TAB     &kp RET &kp BSPC &kp RALT
+                &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB     &kp RET &kp BSPC &kp RALT
                         >;
                 };
                 button_layer {
@@ -85,14 +85,14 @@
                 num_layer {
                         label = "Num";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  |   TAB  |  7  |  8  |  9  |  0  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  |  CTRL  |  4  |  5  |  6  |  0  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |  |  SHFT  |  1  |  2  |  3  |  0  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &trans &kp TAB    &kp N7  &kp N8  &kp N9 &kp GRAVE      &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &trans &kp LCTRL  &kp N4  &kp N5  &kp N6 &kp GRAVE      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &trans &kp LSHFT  &kp N1  &kp N2  &kp N3 &kp GRAVE      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
@@ -109,6 +109,20 @@
 &out OUT_BLE &kp LCTRL    &kp F8   &kp F5   &kp F2   &kp F11     &trans  &trans  &trans  &trans  &trans  &trans
 &out OUT_TOG &kp LALT     &kp F7   &kp F4   &kp F1   &kp F10     &trans  &trans  &trans  &trans  &trans  &trans
                              &trans   &trans   &trans      &trans  &trans  &trans
+                        >;
+                };
+                sym_layer {
+                        label = "Num";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
         };
@@ -150,6 +164,14 @@
       tapping_term_ms = <1200>;
       flavor = "tap-preferred";
       bindings = <&to>, <&kp>;
+    };
+    ltp: layer_tapper {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_TAPPER";
+      #binding-cells = <2>;
+      tapping_term_ms = <200>;
+      flavor = "tap-unless-interrupted";
+      bindings = <&mo>, <&kp>;
     };
   };
 };
