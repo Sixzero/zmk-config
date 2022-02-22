@@ -90,10 +90,10 @@
 // |  |  SHFT  |  1  |  2  |  3  |  0  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &kp LALT   &kp N7  &kp N8  &kp N9 &kp GRAVE   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans &kp LCTRL  &kp N4  &kp N5  &kp N6 &kp N0      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &trans &kp LSHFT  &kp N1  &kp N2  &kp N3 &kp N0      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &trans &kp LALT   &kp N7  &kp N8   &kp N9 &kp N0      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
+   &trans &kp LCTRL  &kp N4  &kp N5   &kp N6 &kp GRAVE   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+   &trans &kp LSHFT  &kp N1  &kp N2   &kp N3 &kp GRAVE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                    	     &kp LGUI &trans &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
