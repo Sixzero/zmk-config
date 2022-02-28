@@ -72,7 +72,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB &kp BSLH &kp FSLH  &kp NON_US_BSLH   &trans   &trans    &kp FSLH &kp GRAVE &kp TILDE &trans  &trans &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT    &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans    &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans &trans
    &kp LSHFT  &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHIFT   &trans         &out OUT_USB  &out OUT_BLE &out OUT_TOG  &trans  &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
 //                 &rgb_ug RGB_SAI,   &rgb_ug RGB_HUI,   &kp C_VOL_UP,      &rgb_ug RGB_EFF,   &rgb_ug RGB_TOG,   U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
@@ -91,7 +91,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &kp LALT   &kp N7  &kp N8   &kp N9 &kp N0      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
-   &trans &kp LCTRL  &kp N4  &kp N5   &kp N6 &kp GRAVE   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+   &trans &kp LCTRL  &kp N4  &kp N5   &kp N6 &kp GRAVE   &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+//  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
    &trans &kp LSHFT  &kp N1  &kp N2   &kp N3 &kp GRAVE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                     	     &kp LGUI &trans &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
