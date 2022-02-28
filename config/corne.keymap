@@ -115,10 +115,10 @@
                 nav_layer {
                         label = "Nav";
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |      |      |     |   |     |     |     |     |     |   |
+// |  TAB |     |     |      |      |     |   |     |     |      |      |     |   |
 // | CTRL | GUI | ALT | CTRL | SHFT |     |   | LFT | DWN |  UP  | RGHT |     |   |
 // | SHFT |     |     |      |      |     |   | INS | HOM | PGUP | PGDN | END |   |
-//                    |      |      | TAB |   | RET | BSP | DEL |
+//                    | ESC  | SPCE | TAB |   | RET | BSP | DEL |
                                            bindings = <
 
 // &bootloader &trans &trans U_NA     U_NA    U_RDO      U_PST    U_CPY   U_CUT  U_UND
@@ -131,10 +131,10 @@
                 media_layer {
                         label = "Media";
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |      |      |     |   |     |     |     |     |     |   |
+// |  TAB |     |     |      |      |     |   |     |     |      |      |     |   |
 // | CTRL | GUI | ALT | CTRL | SHFT |     |   | LFT | DWN |  UP  | RGHT |     |   |
 // | SHFT |     |     |      |      |     |   | INS | HOM | PGUP | PGDN | END |   |
-//                    |      |      |     |   | RET | BSP | DEL |
+//                    | ESC  | SPCE | TAB |   | RET | BSP | DEL |
                                            bindings = <
 
 // &bootloader &trans &trans U_NA     U_NA    U_RDO      U_PST    U_CPY   U_CUT  U_UND
@@ -147,10 +147,10 @@
                 sym_layer {
                         label = "Sym";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   | "|" |  ~  |  8  |  0  |  Ü  |  Ó  |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   | "|" |  ~  |  `  |  0  |  Ü  |  Ó  |
 // | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  Ő  |  Ú  |
 // | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  |  Á  |  Ű  |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | ESC | SPC | TAB |   | RET | BSP | DEL |
                         bindings = <
    &kp TAB   &kp N1    &kp N2    &kp N3       &kp N4       &kp N5    &kp PIPE  &kp TILDE  &kp GRAVE  &kp N0   &kp MINUS &kp EQUAL
    &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR   &kp MINUS &kp EQUAL  &kp LBKT   &kp RBKT &kp LBKT &kp RBKT
