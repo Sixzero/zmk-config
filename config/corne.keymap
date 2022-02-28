@@ -35,7 +35,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &ltg CRAZY GRAVE &kp Q      &kp W      &kp E       &kp R        &kp T        &kp Y    &kp U         &kp I        &kp O       &kp P         &kp LBKT
-   &ltg EXTRA APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G        &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &kp BSLH
+   &ltg EXTRA APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G        &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &kp APOS
    &kp NON_US_BSLH  &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N    &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp MINUS
                                 &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB      &ltp NAV RET &ltp MEDIA BSPC &ltp SYM DEL
                         >;
@@ -141,21 +141,21 @@
    &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans     &trans     &trans  &trans
    &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
    &trans  &kp RALT  &trans    &trans     &trans     &trans    &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans
-                               &trans     &trans     &trans    &kp RET  &kp BSPC  &kp DEL
+                               &kp ESC    &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL
                        >;
                 };
                 sym_layer {
                         label = "Sym";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   | "|" |  ~  |  8  |  0  |  Ü  |  Ó  |
+// | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  [  |  ]  |  Ő  |  Ú  |
+// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  |  Á  |  Ű  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp TAB   &kp N1    &kp N2    &kp N3       &kp N4       &kp N5    &kp PIPE  &kp TILDE  &kp GRAVE  &kp N0   &kp MINUS &kp EQUAL
+   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR   &kp MINUS &kp EQUAL  &kp LBKT   &kp RBKT &kp LBKT &kp RBKT
+   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT          &kp UNDER &kp PLUS   &kp LBRC   &kp RBRC &kp LBKT &kp BSLH
+                    	        &kp ESC    &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL
                         >;
                 };
         };
