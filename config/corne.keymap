@@ -150,7 +150,7 @@
 //                    | ESC | SPC | TAB |   | RET | BSP | DEL |
                         bindings = <
    &kp TAB   &kp N1    &kp N2    &kp N3       &kp N4       &kp N5    &kp PIPE  &kp TILDE  &kp GRAVE  &kp N0   &kp MINUS &kp EQUAL
-   &kp LCTRL &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR   &kp MINUS &kp EQUAL  &kp GT   &kp LT &kp LBKT &kp RBKT
+   &kp LCTRL &hm LGUI CARET &hm LALT AMPS  &hm LCTRL KP_MULTIPLY &hm LSHIFT LPAR &kp RPAR   &kp MINUS &hm RSHIFT EQUAL  &hm RCTRL GT   &hm RALT LT &hm RGUI LBKT &kp RBKT
    &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT          &kp UNDER &kp PLUS   &kp LBRC   &kp RBRC &kp LBKT &kp BSLH
                     	        &kp ESC    &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL
                         >;
