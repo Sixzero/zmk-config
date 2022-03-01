@@ -41,14 +41,14 @@
                         >;
                 };
                 extra_layer {
-                        label = "Hotkey";
+                        label = "Mac";
 // -----------------------------------------------------------------------------------------
 // Interrup activated modkeys
                         bindings = <
-   &ltg CRAZY BSPC &kp Q       &kp W       &kp E         &kp R         &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
-   &ltg BASE  APOS &hsp LGUI A &hsp LALT S &hsp LCTRL D  &hsp LSHIFT F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp BSLH
-   &kp NON_US_BSLH &kp Z       &kp X       &kp C         &kp V         &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp MINUS
-                &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB     &kp RET &kp BSPC &kp RALT
+   &ltg CRAZY NON_US_BSLH &kp Q      &kp W      &kp E       &kp R        &kp T        &kp Y    &kp U         &kp I        &kp O       &kp P         &kp LBKT
+   &ltg EXTRA APOS        &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G        &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &kp APOS
+   &kp GRAVE              &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N    &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp MINUS
+                                      &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB      &ltp NAV RET &ltp MEDIA BSPC &ltp SYM DEL
                         >;
                 };
                 crazy_layer {
