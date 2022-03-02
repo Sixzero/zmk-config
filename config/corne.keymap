@@ -36,10 +36,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &ltg CRAZY GRAVE &kp Q      &kp W      &kp E       &kp R        &kp T        &kp Y    &kp U         &kp I        &kp O       &kp P         &kp LBKT
-   &ltg EXTRA APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G        &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &kp APOS
-   &kp NON_US_BSLH  &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N    &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp MINUS
-                                &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB      &ltp NAV RET &ltp MEDIA BSPC &ltp SYM DEL
+   &ltg CRAZY GRAVE  &kp Q      &kp W      &kp E       &kp R        &kp T        &kp Y    &kp U         &kp I        &kp O       &kp P         &kp LBKT
+   &ltp BUTTON APOS  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G        &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI &kp APOS
+   &kp NON_US_BSLH   &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N    &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp MINUS
+                                &kp ESC &ltp NUM SPC  &ltp FUN TAB      &ltp NAV RET &ltp MEDIA BSPC &ltp SYM DEL
                         >;
                 };
                 extra_layer {
@@ -73,10 +73,10 @@
 // | SHFT | USB | BLE | UBT  |      |      |   |     | VDN  | MUTE  | VUP  |     |     |
 //                    | GUI  |      | SPC  |   | ENT |      | ALT   |
                         bindings = <
-   &trans     &trans       &out OUT_BLE &out OUT_TOG &out OUT_USB &bootloader    &trans  &trans       &trans     &trans       &trans     &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans  &kp C_PREV   &kp C_PP   &kp C_NEXT   &kp C_STOP &trans
-   &kp LSHFT  &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHIFT   &trans         &trans  &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans     &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &trans  &trans       &out OUT_BLE &out OUT_TOG &out OUT_USB &bootloader    &trans  &trans       &trans     &trans       &trans     &trans
+   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans  &kp C_PREV   &kp C_PP   &kp C_NEXT   &kp C_STOP &trans
+   &trans  &bt BT_CLR   &kp LALT     &kp LCTRL    &kp LSHIFT   &trans         &trans  &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans     &trans
+                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
 //                 &rgb_ug RGB_SAI,   &rgb_ug RGB_HUI,   &kp C_VOL_UP,      &rgb_ug RGB_EFF,   &rgb_ug RGB_TOG
                         >;
                 };
