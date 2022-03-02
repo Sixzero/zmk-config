@@ -128,30 +128,30 @@
                 media_layer {
                         label = "Media";
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |      |      |     |   |     |     |      |      |     |   |
+// |  ALT |     |     |      |      |     |   |     |     |      |      |     |   |
 // | CTRL | GUI | ALT | CTRL | SHFT |     |   | LFT | DWN |  UP  | RGHT |     |   |
 // | SHFT |     |     |      |      |     |   | INS | HOM | PGUP | PGDN | END |   |
 //                    | ESC  | SPCE | TAB |   | RET | BSP | DEL |
                                            bindings = <
 
 // &bootloader &trans &trans U_NA     U_NA    U_RDO      U_PST    U_CPY   U_CUT  U_UND
-   &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans     &trans     &trans  &trans
-   &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
-   &trans  &kp RALT  &trans    &trans     &trans     &trans    &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans
+   &kp LALT  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans     &trans     &trans  &trans
+   &kp LCTRL  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
+   &kp LSHFT  &kp RALT  &trans    &trans     &trans     &trans    &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans
                                &kp ESC    &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL
                        >;
                 };
                 sym_layer {
                         label = "Sym";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   | "|" |  ~  |  `  |  0  |  Ü  |  Ó  |
+// |  ALT |  ,  |  /  |  *  |  -  |  +  |   | "|" |  ~  |  `  |  0  |  Ü  |  Ó  |
 // | CTRL |  ^  |  &  |  *  |  (  |  )  |   |  -  |  =  |  <  |  >  | [Ő  | ]Ú  |
-// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  |  Á  |  Ű  |
+// | SHFT |  !  |  @  |  #  |  $  |  %  |   |  _  |  +  |  {  |  }  |  Ő  |  Ű  |
 //                    | ESC | SPC | TAB |   | RET | BSP | DEL |
                         bindings = <
-   &kp TAB   &kp N1    &kp N2    &kp N3       &kp N4       &kp N5    &kp PIPE  &kp TILDE  &kp GRAVE  &kp N0   &kp MINUS &kp EQUAL
-   &kp LCTRL &hm LGUI CARET &hm LALT AMPS  &hm LCTRL KP_MULTIPLY &hm LSHIFT LPAR &kp RPAR   &kp MINUS &hm RSHIFT EQUAL  &hm RCTRL GT   &hm RALT LT &hm RGUI LBKT &kp RBKT
-   &kp LSHFT &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT          &kp UNDER &kp PLUS   &kp LBRC   &kp RBRC &kp LBKT &kp BSLH
+   &kp LALT  &kp KP_COMMA   &kp KP_SLASH   &kp KP_ASTERISK       &kp KP_SUBTRACT  &kp KP_PLUS    &kp PIPE  &kp TILDE         &kp GRAVE     &kp N0       &kp MINUS     &kp EQUAL
+   &kp LCTRL &hm LGUI CARET &hm LALT AMPS  &hm LCTRL KP_MULTIPLY &hm LSHIFT LPAR  &kp RPAR       &kp MINUS &hm RSHIFT EQUAL  &hm RCTRL GT  &hm RALT LT  &hm RGUI LBKT &kp RBKT
+   &kp LSHFT &kp EXCL       &kp AT         &kp HASH              &kp DLLR         &kp PRCNT      &kp UNDER &kp PLUS          &kp LBRC      &kp RBRC     &kp LBKT      &kp BSLH
                     	        &kp ESC    &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL
                         >;
                 };
