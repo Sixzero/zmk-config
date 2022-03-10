@@ -53,7 +53,7 @@
                                       &ltp BUTTON ESC &ltp NUM SPC  &ltp FUN TAB      &ltp NAV RET &ltp MEDIA BSPC &ltp SYM DEL
                         >;
                 };
-                crazy_layer {
+                simple_layer {
                         label = "Simple";
 // -----------------------------------------------------------------------------------------
 // same as base, but smaller times
@@ -135,7 +135,6 @@
 // | SHFT |     |     |      |      |     |   | INS | HOM | PGUP | PGDN | END |   |
 //                    | ESC  | SPCE | TAB |   | RET | BSP | DEL |
                                            bindings = <
-
 // &bootloader &trans &trans U_NA     U_NA    U_RDO      U_PST    U_CPY   U_CUT  U_UND
    &kp LALT   &trans    &trans    &trans     &trans     &trans    &trans  U_BTN1  U_BTN2  U_BTN3  &trans  &trans
    &kp LCTRL  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    U_MS_L  U_MS_D  U_MS_U  U_MS_R  &trans  &trans
